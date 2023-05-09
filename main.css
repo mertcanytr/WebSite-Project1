@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background:url(minimalism_AI_art_simple_background_science_fiction_abstract_mountains_night-2202287.jpg);
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
+.container .navbar{
+    width: 100%;
+    height: 100%;
+    background:rgba(0, 0, 0, 0.4);
+    
+}
+
+.navbar .logo{
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.navbar .logo a{
+    text-decoration: none;
+    font-size: 30px;
+    font-family: sans-serif;
+    color:rgb(219, 219, 219);
+}
+
+
+.navbar ul{
+    float: right;
+    margin-right: 20px;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+}
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family: Roboto;
+    transition: .5s ;  
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background: rgb(94, 93, 93);
+    border-radius: 2px;
+}
