@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <title>İletişim Formu</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <!-- Header - Start -->
+    <div class="container">
+        <header>
+            <div class="header-container">
+                <div class="logo">
+                    <a href="#">Mert Can Yeter</a>
+                </div>
+                <ul>
+                    <li><a href="about-me.html">Hakkımda</a></li>
+                    <li><a href="biography.html">Öz Geçmiş</a></li>
+                    <li><a href="city.html">Şehrim</a></li>
+                    <li><a href="legacy.html">Mirasımız</a></li>
+                    <li><a href="hobbies.html">İlgi Alanlarım</a></li>
+                    <li><a href="contact.html" class="active">İletişim</a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- Header - End -->
+        <!-- Container - Start -->
+        <div class="info">
+            <h2>İletişim Formu</h2>
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="ad">Ad:</label>
+                    <input type="text" name="ad" id="ad" required placeholder="Adınızı girin">
+                </div>
+                <div class="form-group">
+                    <label for="soyad">Soyad:</label>
+                    <input type="text" name="soyad" id="soyad" required placeholder="Soyadınızı girin">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-posta:</label>
+                    <input type="email" name="email" id="email" required placeholder="E-posta adresinizi girin">
+                </div>
+                <div class="form-group">
+                    <label for="sifre">Şifre:</label>
+                    <input type="password" name="sifre" id="sifre" required placeholder="Şifrenizi girin">
+                </div>
+                <div class="form-group">
+                    <label for="yas">Yaş:</label>
+                    <input type="number" name="yas" id="yas" required placeholder="Yaşınızı girin">
+                </div>
+                <div class="form-group">
+                    <label>Hobiler:</label>
+                    <div>
+                        <input type="checkbox" name="hobi1" id="hobi1">
+                        <label for="hobi1">Futbol</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="hobi2" id="hobi2">
+                        <label for="hobi2">Yüzme</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="hobi3" id="hobi3">
+                        <label for="hobi3">Karate</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="hobi4" id="hobi4">
+                        <label for="hobi4">Kitap Okuma</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Gönder</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Container - End -->
+        <!-- JS - Start -->
+        <script>
+            function kontrolEt() {
+                var ad = document.getElementById("ad").value;
+                var soyad = document.getElementById("soyad").value;
+                var email = document.getElementById("email").value;
+                var sifre = document.getElementById("sifre").value;
+                var yas = document.getElementById("yas").value;
+
+                if (ad === "") {
+                    alert("Lütfen adınızı girin");
+                    return false;
+                }
+
+                if (soyad === "") {
+                    alert("Lütfen soyadınızı girin");
+                    return false;
+                }
+
+                if (email === "") {
+                    alert("Lütfen e-posta adresinizi girin");
+                    return false;
+                }
+
+
+                if (sifre === "") {
+                    alert("Lütfen şifrenizi girin");
+                    return false;
+                } if (yas === "") {
+                    alert("Lütfen yaşınızı girin");
+                    return false;
+                }
+
+                // Diğer form elemanlarının kontrolünü burada yapabilirsiniz
+
+                return true;
+            }
+        </script>
+        <!-- JS - End -->
+    </div>
+</body>
+
+</html>
