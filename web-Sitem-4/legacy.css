@@ -1,0 +1,132 @@
+/* legacy.css */
+
+/* Section Styling */
+section {
+    margin-top: 80px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  section p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* Mirasımız Bölümü */
+  .mirasimiz-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .mirasimiz-item {
+    width: calc(33.33% - 20px);
+    margin-bottom: 20px;
+  }
+  
+  .mirasimiz-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .mirasimiz-item h3 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  
+  .mirasimiz-item p {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  /* Footer Styling */
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff00;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  footer a {
+    color: #ffffff00;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #aaaaaa00;
+  }
+  
+  #social-media {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  #social-media .fab {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: #3b589800;
+    color: #ffffff00;
+    text-align: center;
+    line-height: 40px;
+    margin-left: 10px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+  }
+  
+  #social-media .fab:hover {
+    background-color: #264f8200;
+  }
+  
+  #social-media .fab.fa-linkedin {
+    background-color: #0076b500;
+    background-image: url("linkedin-logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  #social-media .fab.fa-instagram {
+    background-color: #e4405e00;
+    background-image: url("instagram-logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+ /* Arka Plan Resmi */
+body {
+    margin: 0;
+    padding: 0;
+    background: url(minimalism_AI_art_simple_background_science_fiction_abstract_mountains_night-2202287.jpg) fixed;
+    background-size: cover;
+  }
+  
+  .container {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit;
+    z-index: -1;
+  }
+  
