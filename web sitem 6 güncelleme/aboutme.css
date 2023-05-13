@@ -1,0 +1,99 @@
+
+/* Özelleştirilmiş CSS Kodu */
+.left-section {
+    position: fixed;
+    top: 150px; /* Header yüksekliği kadar boşluk bırak */
+    bottom : 200px;
+    left: 50px;
+    width: 30%; /* Sayfanın yarısını kaplasın */
+    height: 60%; /* Header hariç diğer kalan alanı kaplasın */
+    background-color: rgba(242, 242, 242, 0.164);
+    padding: 20px;
+    border-radius: 10px; /* Kenarları 10 piksel kavisli yap */
+    z-index: 1;
+  }
+  
+  .right-section {
+    position: fixed;
+    top: 150px; /* Header yüksekliği kadar boşluk bırak */
+    bottom: 200px;
+    right: 50px;
+    width: 30%; /* Sayfanın yarısını kaplasın */
+    height: 60%; /* Header hariç diğer kalan alanı kaplasın */
+    background-color: rgba(242, 242, 242, 0.158);
+    padding: 20px;
+    border-radius: 10px; /* Kenarları 10 piksel kavisli yap */
+    z-index: 1;
+  }
+  
+.section-title{
+    color: rgb(168, 252, 241);
+}
+
+.container .main-container .center{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: sans-serif;
+
+}
+
+.center h1{
+    color: rgb(216, 216, 216);
+    font-size: 70px;
+    font-weight:bold ;
+    width: 900px;
+    text-align: center;
+
+}
+.center h2{
+    color: rgb(216, 216, 216);
+    font-size: 50px;
+    font-weight: bold;
+    width: 885px;
+    margin-top:10px ;
+    text-align: center;
+}
+
+.article h2{
+    color: aqua;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+.article.ol{
+    color: aliceblue;
+    text-align: center;
+    top: 40%;
+    left: 50%;
+    font-size: medium;
+    font-family: Roboto;
+    
+}
+.me-p{
+    color: aliceblue;
+    font-size: 25px;
+}
+
+main {
+    padding: 30px 15px;
+    min-height: 770px;
+    background-color: transparent;
+}
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+h2 {
+    margin-top: 15px;
+}
+p {
+    margin-top: 15px;
+}
