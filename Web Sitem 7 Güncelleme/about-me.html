@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kişisel Web Sitem</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="aboutme.css">
+
+</head>
+
+<body>
+    <!-- Header - Start -->
+    <div class="container">
+        <header>
+            <div class="header-container">
+                <div class="logo">
+                    <a href="#">Mert Can Yeter</a>
+                </div>
+                <ul>
+                    <li><a href="about-me.html" class="active">Hakkımda</a></li>
+                    <li><a href="biography.html">Öz Geçmiş</a></li>
+                    <li><a href="city.html">Şehrim</a></li>
+                    <li><a href="legacy.html">Mirasımız</a></li>
+                    <li><a href="hobbies.html">İlgi Alanlarım</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- Header - End -->
+         <!-- Left-Section - Start -->
+         <section class="left-section">
+            <!-- Articles-1 - Start -->
+            <article>
+                
+                <h2 class="section-title">Ben Kimim ?</h2>
+                        <p class="me-p">10 Mart 2001 yılında Malatya'da doğdum. İlkokul ve ortaokul eğitimimi Malatya'nın Yazıhan adlı küçük bir ilçesinde
+                            tamamladım. İlk ve Ortaokul hayatımda sınavlarda çok başarılı bir öğrenciydim.Türkiye ve il dereceleri aldığım pekçok sınav oldu.PYBS'ında Türkiye 124.'sü oldum.Malatya il birinciliklerim bulunuyor.
+                            Liseyi Antalya'da Namık Karamancı Fen Lisesi'nde yatılı olarak okudum.<br>
+                            Ortakulda ve lisede toplam 7 yıl Halk Oyunlarında oynadım.
+                            Yarışmalarda kupalar ve madalyalar kazandım.2 tane Antalya birinciliği ,1 tane Antalya 2.liği ,1 tane Antalya 3.lüğü kazandık.
+                            Ayrıca Ortaokul ve Lisede toplamda 5 yıl civarı Masa Tenisi oynadım ve kaptanlık yaptım , turnuvalara katıldım bu alanda madalyalar kazandım.
+                            <br>Şu anda Sakarya Üniversitesi Bilgisayar ve Biliişim Bilimleri Fakültesi Bilgisayar Mühendisliği öğrencisiyim.</p>
+            </article>
+            <!-- Articles-1 - End -->
+        </section>
+        
+        <!-- Right-Section - Start -->
+        <section class="right-section">
+            <!-- Articles-2 - Start -->
+            <article>
+                <h3>
+                    <p></p>
+                </h3>
+            </article>
+            <!-- Articles-2 - End -->
+        </section>
+        <!-- Right-Section - End -->
+        <section class="slider-section">
+            <div class="slider">
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+
+                <div class="st first">
+                    <img src="hakkımdaben.jpg" alt="Resim 1">
+                </div>
+                <div class="st">
+                    <img src="kitap-kahve.jpeg" alt="Resim 2">
+                </div>
+                <div class="st">
+                    <img src="masa-tenisi.jpg" alt="Resim 3">
+                </div>
+                <div class="st">
+                    <img src="halkoyunları1.png" alt="Resim 4">
+                </div>
+                <div class="nav-auto">
+                    <div class="a-b1"></div>
+                    <div class="a-b2"></div>
+                    <div class="a-b3"></div>
+                    <div class="a-b4"></div>
+                </div>
+            </div>
+            
+            <div class="nav-m">
+                <label for="radio1" class="m-btn"></label>
+                <label for="radio2" class="m-btn"></label>
+                <label for="radio3" class="m-btn"></label>
+                <label for="radio4" class="m-btn"></label>
+            </div>
+        <section>
+        <script type="text/javascript">
+        var counter=1;
+        setInterval(function(){
+            document.getElementById('radio'+ counter).checked=true;
+            counter++;
+            if (counter >4) {
+                counter =1;
+            }
+        },5000);
+        </script>
+         <!-- Footer - Start -->
+        <footer>
+            <div id="social-media">
+            <a href="https://www.linkedin.com/in/mert-can-yeter-150b8425a/" target="_blank" class="fab fa-linkedin"></a>
+            <a href="https://www.instagram.com/mertcanytr/" target="_blank" class="fab fa-instagram"></a>
+            </div>
+        </footer>
+         <!-- Footer - End -->
+    </div>
+</body>
+
+</html>

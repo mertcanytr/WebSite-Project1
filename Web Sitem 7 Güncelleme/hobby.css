@@ -1,0 +1,127 @@
+/* Özelleştirilmiş CSS Kodu */
+.left-section {
+    position: fixed;
+    top: 150px; /* Header yüksekliği kadar boşluk bırak */
+    bottom : 200px;
+    left: 50px;
+    width: 30%; /* Sayfanın yarısını kaplasın */
+    height: 50%; /* Header hariç diğer kalan alanı kaplasın */
+    background-color: rgba(242, 242, 242, 0.164);
+    padding: 20px;
+    border-radius: 10px; /* Kenarları 10 piksel kavisli yap */
+    z-index: 1;
+  }
+  
+  .right-section {
+    position: fixed;
+    top: 150px; /* Header yüksekliği kadar boşluk bırak */
+    bottom: 200px;
+    right: 50px;
+    width: 30%; /* Sayfanın yarısını kaplasın */
+    height: 50%; /* Header hariç diğer kalan alanı kaplasın */
+    background-color: rgba(242, 242, 242, 0.158);
+    padding: 20px;
+    border-radius: 10px; /* Kenarları 10 piksel kavisli yap */
+    z-index: 1;
+  }
+  
+  .section-title{
+    color: rgb(168, 252, 241);
+    font-size: 30px;
+}
+.hobby-p{
+  font-size: 24px;
+}
+.gallery {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .gallery h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .gallery-images {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  
+  .gallery-image {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+  }
+  
+  .gallery-image:hover {
+    transform: scale(1.2);
+  }
+
+
+  /* eklendi */
+  .gallery .blur-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Arka planı saydam kılmak için */
+    backdrop-filter: blur(8px); /* Arka planı bulanıklaştırmak için */
+    z-index: 9999; /* Diğer elemanların üzerinde görüntülenmesini sağlar */
+    display: none; /* Başlangıçta gizli olacak */
+  }
+  
+  .gallery .expanded-image {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 90%;
+    max-height: 90%;
+    /* Diğer stil özellikleri */
+    z-index: 10000; /* Blur arka planın üzerinde görüntülenmesini sağlar */
+    display: none; /* Başlangıçta gizli olacak */
+  }
+  
+  .gallery .navigation {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    /* Diğer stil özellikleri */
+  }
+  
+  .gallery .navigation .prev,
+  .gallery .navigation .next {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    /* Diğer stil özellikleri */
+  }
+  .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Arkayı yarı saydam siyah bir renk yap */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(5px); /* Blur efekti uygula */
+  z-index: 9999;
+}
+
+.overlay img {
+  max-width: 80%; /* Büyük resmin maksimum genişliği */
+  max-height: 80vh; /* Büyük resmin maksimum yüksekliği */
+  object-fit: contain; /* Resmi içine sığacak şekilde ölçeklendir */
+}
