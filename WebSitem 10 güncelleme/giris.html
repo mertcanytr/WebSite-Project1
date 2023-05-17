@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Giriş Sayfası</title>  
+  <link rel="stylesheet"  type="text/css" href="css/login.css">
+</head>
+<body>
+  <div class="giris-formu">
+    <h2>Giriş Yap</h2>
+    <?php if (isset($hataMesaji)) : ?>
+      <p><?php echo $hataMesaji; ?></p>
+    <?php endif; ?>
+    <form action="login.php" method="post">
+      <label for="kullanici_adi">Kullanıcı Adı:</label>
+      <input type="text" id="kullanici_adi" name="kullanici_adi" required><br><br>
+      <label for="sifre">Şifre:</label>
+      <input type="password" id="sifre" name="sifre" required><br><br>
+      <button type="submit">Giriş Yap</button>
+    </form>
+  </div>
+</body>
+</html>
