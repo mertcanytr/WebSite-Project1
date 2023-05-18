@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+</html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Kişisel Web Sitem</title>
+    <link rel="stylesheet"  type="text/css" href="css/main.css">
+    <link rel="stylesheet"  type="text/css" href="css/hobby.css">
+    <script src="./galleryhobbies.js"></script>
+
+
+</head>
+
+<body>
+    <!-- Header - Start -->
+    <div class="container">
+        <header>
+            <div class="header-container">
+                <div class="logo">
+                    <a href="#">Mert Can Yeter</a>
+                </div>
+                <ul>
+                    <li><a href="about-me.html">Hakkımda</a></li>
+                    <li><a href="biography.html" >Öz Geçmiş</a></li>
+                    <li><a href="city.html">Şehrim</a></li>
+                    <li><a href="legacy.html">Mirasımız</a></li>
+                    <li><a href="hobbies.html" class="active">İlgi Alanlarım</a></li>
+                    <li><a href="contact.html">İletişim</a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- Header - End -->
+
+        <!-- Content - Start -->
+
+        <!-- Left-Section - Start -->
+        <section class="left-section">
+            <!-- Articles-1 - Start -->
+            <article>
+                <h2 class="section-title" > Kitap Okumak</h2>
+                <p class="hobby-p">Neredeyse her gün kitap okurum.Genellikle roman,öykü,felsefe,psikoloji,popüler bilim kitaplarıyla vakit geçiririm.Bu aralar Çizgi roman okumayı da deniyorum. <br>
+                En Sevdiğim Yazarlar arasında Wilhelm Genazino,Ayn Rand,Dostoyevski,Albert Camus,Bertrand Russell ,İtalo Calvino bulunuyor.</p>
+                <!-- Kitap Kapakları -->
+              <div class="book-gallery">
+                <img id="bookCover" class="book-cover" src="" alt="Kitap Kapak">
+              </div>
+              <!-- Önceki ve Sonraki Butonları -->
+              <div class="navigation-buttons">
+                <button class="slider-prev" onclick="showPreviousBook()">Önceki</button>
+                <button class="slider-next" onclick="showNextBook()">Sonraki</button>
+              </div>
+        </section>
+            <!-- Left-Section - End -->
+        
+        <!-- Right-Section - Start -->
+        <section class="right-section">
+            <!-- Articles-2 - Start -->
+            <article>
+                <h2 class="section-title">Film ve Dizi İzlemek</h2>
+                    <p class="hobby-p">Film izlemeyi çok severim.Genellikle sanat filmleri, 60'lar Fransız sineması izlerim.sevdiğim yönetmenler : Wong-Kar-Wai ,Jean-Luc Godard,Krzysztof Kieślowski,İngmar Bergman.En sevdiğim Filmlerin afişlerini aşağıda görebilirsiniz. </p>                    
+                    <div class="gallery-api-images">
+                        <img id="gallery-api-image" class="gallery-api-image" src="" alt="">
+                      </div>
+                      
+                      <div class="navigation">
+                        <button class="prev">Önceki</button>
+                        <button class="next">Sonraki</button>
+                      </div>
+                      
+                
+            </article>
+            <!-- Articles-2 - End -->
+        </section>
+        <!-- Right-Section - End -->
+
+        <!-- Gallery - Start -->
+        <section class="gallery">
+            <div class="gallery-container">
+                <img class="gallery-image"
+                    src="images/masa-tenisi.jpg" alt="masa-tenisi"></a>
+                <img class="gallery-image"
+                    src="images/letterboxd-me.jpg" alt="letterboxd-me"></a>
+                <img class="gallery-image"
+                    src="images/kitap-kahve.jpeg" alt="kitap-kahve"></a>
+                <img class="gallery-image"
+                    src="images/kahve-demleme.jpeg" alt="kahve-demleme"></a>
+                <img class="gallery-image"
+                    src="images/kahve-demleme2.jpeg" alt="kahve-demleme2"></a>
+            
+                
+            </div>
+        </section>
+        <!-- Gallery - End -->
+
+        <!-- Content - End -->
+
+        <!-- Footer - Start -->
+        <footer>
+            <div id="social-media">
+            <a href="https://www.linkedin.com/in/mert-can-yeter-150b8425a/" target="_blank" class="fab fa-linkedin"></a>
+            <a href="https://www.instagram.com/mertcanytr/" target="_blank" class="fab fa-instagram"></a>
+            </div>
+        </footer>
+        <!-- Footer - End -->
+
+
+
+    </div>
+</body>
+
+</html>
